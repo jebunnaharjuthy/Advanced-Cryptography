@@ -1,3 +1,4 @@
+In, the provided code, the Mersenne Twister algorithm is used as the underlying PRNG method.
 This code ensures that the random numbers generated are different each time the code is executed by using a unique seed based on the current time and the process ID.
 
 Seed Initialization:
