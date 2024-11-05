@@ -1,1 +1,8 @@
+This code ensures that the random numbers generated are different each time the code is executed by using a unique seed based on the current time and the process ID.
 
+Seed Initialization:
+The random number generator is seeded using a combination of the current time in nanoseconds (time.time_ns()) and the process ID (os.getpid()).
+The expression (time.time_ns() + os.getpid()) % 10 calculates the seed value, which is the sum of the nanoseconds and the process ID, taken modulo 10 to ensure it stays within a small range.
+
+Generating Random Numbers:
+A loop runs five times to generate and print five random integers between 0 and 10 (inclusive), using the initialized random seed.
